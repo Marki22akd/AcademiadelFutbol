@@ -2,7 +2,13 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin: 'https://academiafutbol.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    credentials: true,
+  }
+));
 
 const indexRoutes = require('./routes/index_route');
 const ligasRoutes = require('./routes/ligas_route');
