@@ -1,4 +1,4 @@
-const proxy = "https://academiadel-futbol-api.vercel.app/api"
+const proxy = "https://academiadel-futbol-api.vercel.app/api/"
 const options = {method: 'GET', headers: {"Content-Type": "application/json",
     "Access-Control-Allow-Origin": "https://academiadel-futbol-api.vercel.app",
     "Access-Control-Allow-Credentials": "true",
