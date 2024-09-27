@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia del Futbol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo.png">
+</head>
+<body>
+    <div class="d-flex">
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading"><a href="index.html"><img src="imagenes/logo.png" style="width:120px; height:auto;"></a></div>
+            <div class="list-group list-group-flush">
+                <a href="#"id="Argentina" class="list-group-item list-group-item-action" style="background-color: rgba(255, 255, 255, .2);">
+                    <img id="bandera"src="https://flagcdn.com/ar.svg"></img> Argentina
+                </a>
+                <a href="#"id="Argentina1" class="list-group-item list-group-item-action">Liga Profesional</a>
+                <a href="#"id="Argentina2" class="list-group-item list-group-item-action">Primera B Nacional</a>
+                <a href="#" id="Argentina3" class="list-group-item list-group-item-action">B Metropolitana</a>
+                <a href="#" id="Argentina4" class="list-group-item list-group-item-action">Federal A</a> 
+                <a href="#"id="CopasInt" class="list-group-item list-group-item-action" style="background-color: rgba(255, 255, 255, .2);">
+                    <i class="bi bi-trophy"></i>Copas Int.
+                </a>
+                <a href="#"id="Libertadores" class="list-group-item list-group-item-action">
+                    Copa Libertadores
+                </a>
+                <a href="#"id="Sudamericana" class="list-group-item list-group-item-action">
+                    Copa Sudamericana
+                </a>
+                <a class="list-group-item list-group-item-action" style="background-color: rgba(255, 255, 255, .2);">
+                    <img id="bandera"src="https://flagcdn.com/eu.svg"></img> Ligas
+                </a>
+                <a href="#" id="England" class="list-group-item list-group-item-action" >
+                    <img id="bandera"src="https://flagcdn.com/gb.svg"></img>  Premier League
+                </a>
+                <a href="#" id="Spain" class="list-group-item list-group-item-action">
+                    <img id="bandera"src="https://flagcdn.com/es.svg"></img>  La Liga
+                </a>
+                <a href="#" id="Italy" class="list-group-item list-group-item-action">
+                    <img id="bandera"src="https://flagcdn.com/it.svg"></img>  Serie A
+                </a>
+                <a href="#" id="Germany" class="list-group-item list-group-item-action">
+                    <img id="bandera"src="https://flagcdn.com/de.svg"></img>  Bundesliga
+                </a>
+                <a href="#" id="France" class="list-group-item list-group-item-action">
+                    <img id="bandera"src="https://flagcdn.com/fr.svg"></img>  Ligue 1
+                </a>
+                <a href="#" id="Netherlands" class="list-group-item list-group-item-action">
+                    <img id="bandera"src="https://flagcdn.com/nl.svg"></img>  Eredivisie
+                </a>
+                <a href="#" id="Brazil" class="list-group-item list-group-item-action">
+                    <img id="bandera"src="https://flagcdn.com/br.svg"></img>  Brasileirao
+                </a>
+                <a id="footer">
+                    <p id="footer2">Academia del Futbol &copy; 2023</p>
+                    <p id="footer2">Todos los derechos reservados</p>
+                </a>
+            </div>
+        </div>
+        <div id="content" class="p-4">
+    </div>
+    </div>
+    <div><button id="menu-toggle" class="menu-toggle d-md-none">☰ Menú</button></div>
+    <script src="scripts/fetch.js"></script>
+    <script src="scripts/paises.js"></script>
+    <script src="scripts/partido.js"></script>
+    <script src="scripts/indexligas.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        console.log(id)
+        partido(id)
+    </script>
+</body>
+</html>
