@@ -15,15 +15,16 @@ const rowDiv = document.createElement('div');
 rowDiv.classList.add('row'); 
 
 const colDiv1 = document.createElement('div');
-colDiv1.classList.add('col-12','col-xs-12', 'col-sm-12', 'col-md-6','col-lg-6','col-xl-6' ); 
+colDiv1.classList.add('col-12','col-xs-12', 'col-sm-12', 'col-md-12','col-lg-7','col-xl-6' ); 
 colDiv1.appendChild(divFixture1); 
 
 const colDiv2 = document.createElement('div');
-colDiv2.classList.add('col-12','col-xs-12', 'col-sm-12','col-md-6','col-lg-6','col-xl-6' ); 
+colDiv2.classList.add('col-12','col-xs-12', 'col-sm-12','col-md-12','col-lg-5','col-xl-6' ); 
 colDiv2.appendChild(fixtures); 
 
 rowDiv.appendChild(colDiv1);
 rowDiv.appendChild(colDiv2);
+rowDiv.style="display:flex; justify-content:space-around;"
 containerDiv.appendChild(rowDiv);
 container2.appendChild(containerDiv);
  
