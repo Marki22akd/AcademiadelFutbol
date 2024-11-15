@@ -1,0 +1,360 @@
+body {
+    background: url('imagenes/fondo2.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    z-index: -1;
+}
+#logo{
+    width:auto;
+    height:120px;
+}
+#footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height:150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer2 {
+    font-size: 12px;
+}
+.card-body {
+    margin-left:1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+#bandera {
+    margin-bottom: 3px;
+    width: 20px;
+    height: auto;
+}
+
+.table-container {
+    margin-top: 5rem;
+    width: 1000px;
+    position: absolute;
+}
+.table thead th {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.table th, .table td {
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+}
+
+#tablaIndex {
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tableLiga {
+    text-align: center;
+    border-collapse: separate;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#sidebar-wrapper {
+    width: 210px;
+    margin-top:1rem;
+    margin-left:1rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, .25);
+    position: absolute;
+    border-radius: 10px;
+    overflow-y: auto;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+}
+
+.lineups{
+    margin-left: 500px;
+    margin-top: 40px;
+    width: 100%; 
+    display:flex; 
+    align-items:center; 
+    flex-direction: column;
+}
+.sidebar-heading {
+    padding: 15px;
+    text-align: center;
+    background: transparent;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.list-group-item {
+    background: transparent;
+    color: #ffffff;
+    height:35px;
+    border: none;
+    padding: 5px 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.list-group-item:hover {
+    background: rgba(0, 0, 0, .2);
+    color: #ffffff;
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+.list-group-item.active {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+#content {
+    padding: 2rem;
+    background-color: transparent !important;
+    font-size: 1rem;
+}
+
+/* Estilo para centrar el contenedor */
+.table-container {
+    max-width: 100%; 
+}
+
+/* Estilos ligas.html */
+
+.container {
+    margin-left: 250px;
+}
+#content3 {
+    width: 600px;
+}
+#tituloLiga {
+    width: 600px; 
+    text-align: center; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    height: 35px; 
+    font-weight: bold; 
+    font-size: 18px; 
+    align-content: center;
+}
+#tituloLiga2{
+    font-size:18px;
+}
+#tableLiga {
+    border: 1px solid;
+    width:600px;
+}
+#tableLiga td {
+    padding: 0px; !important;
+    align-content: center;
+}
+#theadLiga {
+    font-size:14px;
+}
+#logoEquipo {
+    width: 30px; 
+    height: 30px;
+}
+#nombreEquipo {
+    display: flex; 
+    align-items: center;
+    text-align: left;
+}
+#fixtures {
+    width: 600px;
+}
+#divF1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+#fixturesTitulo{
+    text-align: center; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    font-weight: bold; 
+    font-size: 18px; 
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;
+}
+#fixturesTabla {
+    border:1px; 
+    background-color: gray; 
+    width: 100%
+}
+@media(max-width: 768px) {
+    .container{
+        margin-left:20px;
+        max-width:600px;
+    }
+}
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: #343a40;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        margin: 0 auto;
+        border-radius: 5px;
+        position:fixed;
+        width: 100px;
+        height: 50px;
+        z-index:1001;
+        left: 6px;
+        bottom:6px;
+    }
+
+    #fixtures {
+        margin-left: 0; /* Eliminar margen en móviles */
+        padding: 1rem; /* Ajustar padding en móviles */
+    }
+    .table {
+        width: 550px; 
+    }
+    .lineups {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transform: translateX(-50%); /* Centrar el sidebar */
+        margin-left: 120px;
+    }
+    #sidebar-header {
+        height:100%;
+    }
+    #logo{
+        width:auto;
+        height:180px;
+    }
+    #sidebar-wrapper.show {
+        display: block; /* Mostrar sidebar al activar */
+    }
+
+    .table-container {
+        margin: 0 1rem; 
+        width: 100px; 
+    }
+
+    #content {
+        padding: 1rem; 
+    }
+    .card-body{
+        margin-left:10px;
+    }
+}
+
+@media (min-width: 769px) {
+    #menu-toggle {
+        display: none; /* Ocultar botón en pantallas grandes */
+    }
+
+    #sidebar-wrapper {
+        display: block; /* Mostrar sidebar en pantallas grandes */
+    }
+    .table-container {
+        margin: 0 1rem; 
+        width: 100px; 
+    }
+    .table {
+        width: 600px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 400px){
+    #menu-toggle {
+        display: block;
+        background-color: #343a40;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        margin: 0 auto;
+        border-radius: 5px;
+        position:fixed;
+        width: 100px;
+        height: 50px;
+        z-index:1001;
+        left: 6px;
+        bottom:6px;
+    }
+
+    #fixtures {
+        margin-left: 0; /* Eliminar margen en móviles */
+        padding: 0rem; /* Ajustar padding en móviles */
+    }
+    .table {
+        width: 100%; 
+    }
+    .lineups {
+        margin-left: 0px;
+    }
+    #sidebar-wrapper {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 90%;
+        z-index: 1000;
+        transform: translateX(-50%); /* Centrar el sidebar */
+        margin-left: 0px;
+    }
+    #sidebar-header {
+        height:100%;
+    }
+    #logo{
+        width:auto;
+        height:160px;
+    }
+    #sidebar-wrapper.show {
+        display: block; /* Mostrar sidebar al activar */
+    }
+
+    .table-container {
+        margin: 0 1rem; 
+        width: 100px; 
+    }
+
+    #content {
+        padding: 0rem; 
+    }
+    .card-body{
+        width:99%;
+        margin-left:2px;
+    }
+    #fixtures {
+        width: 100%;
+    }
+    .container {
+        margin-left:-10px;
+    }
+}
